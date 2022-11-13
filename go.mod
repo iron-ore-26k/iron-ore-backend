@@ -9,4 +9,4 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace github.com/iron-ore-26k/ore-pb-gen v1.0.0 => /home/jgme/iron_ore_backend/pb/gen
+replace github.com/iron-ore-26k/ore-pb-gen v1.0.0 => \pb\gen
