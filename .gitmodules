@@ -1,0 +1,3 @@
+[submodule "pb/protobuf"]
+	path = pb/protobuf
+	url = https://github.com/iron-ore-26k/protobuf
