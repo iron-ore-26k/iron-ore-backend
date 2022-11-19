@@ -7,7 +7,6 @@ import (
 	"log"
 	"net"
 
-	"github.com/iron-ore-26k/ore-pb-gen"
 	pb "github.com/iron-ore-26k/ore-pb-gen"
 	"google.golang.org/grpc"
 )
@@ -20,12 +19,12 @@ type server struct {
 	pb.UnimplementedOreServiceServer
 }
 
-func (s *server) PlaySong(ctx context.Context, in *pb.PlaySongRequest) (*ore.PlaySongResponse, error) {
+func (s *server) PlaySong(ctx context.Context, in *pb.PlaySongRequest) (*pb.PlaySongResponse, error) {
 	log.Printf("Recieved: %v", in.GetSongToPlay())
 	return &pb.PlaySongResponse{}, nil
 }
 
-func (s *server) Pause(ctx context.Context, in *pb.PauseRequest) (*ore.PauseResponse, error) {
+func (s *server) Pause(ctx context.Context, in *pb.PauseRequest) (*pb.PauseResponse, error) {
 	log.Printf("Recieved: pause request")
 	return &pb.PauseResponse{}, nil
 }
