@@ -16,3 +16,5 @@
 
 # Generated pbs
 pb/gen/*
+
+setBotToken.sh
